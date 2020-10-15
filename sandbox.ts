@@ -1,12 +1,13 @@
-const person = 'Rohan';
+let character = 'Rohan';
+let age = 21;
+let isAwesome = true; 
 
-console.log(person)
+// character = 12
 
+// character = 'Gautam';
 
-const inputs = document.querySelectorAll('input')
-
-inputs.forEach(input => {
-    console.log(input)
-})
-
-console.log('Compling')
+const circ = (diameter: number) => {
+    return diameter * Math.PI
+}
+ 
+console.log(circ(7));

@@ -1,7 +1,9 @@
-var person = 'Rohan';
-console.log(person);
-var inputs = document.querySelectorAll('input');
-inputs.forEach(function (input) {
-    console.log(input);
-});
-console.log('Compling');
+var character = 'Rohan';
+var age = 21;
+var isAwesome = true;
+// character = 12
+// character = 'Gautam';
+var circ = function (diameter) {
+    return diameter * Math.PI;
+};
+console.log(circ(7));
