@@ -1,5 +1,24 @@
 import { Invoice } from './classes/Invoice.js'
 
+//interface
+
+interface IsPerson {
+    name: string;
+    id: number;
+    language(a: string):void;
+}
+
+const me: IsPerson = {
+    name: 'Rohan',
+    id: 1998,
+    language(speak: string){
+        console.log(speak);
+    }
+}
+
+console.log(me);
+
+
 const invOne = new Invoice('rohit', 80, 'personal reason');
 const invTwo = new Invoice('badal', 100, 'personal reason');
 
