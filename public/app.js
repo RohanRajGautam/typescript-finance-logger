@@ -1,4 +1,12 @@
 import { Invoice } from './classes/Invoice.js';
+import { Payment } from './classes/Payment.js';
+let docOne;
+let docTwo;
+docOne = new Invoice('rohit', 200, 'web dev');
+docTwo = new Payment('rohan', 150, 'mobile app');
+let docs = [];
+docs.push(docOne);
+docs.push(docTwo);
 const me = {
     name: 'Rohan',
     id: 1998,
@@ -6,15 +14,6 @@ const me = {
         console.log(speak);
     }
 };
-console.log(me);
-const invOne = new Invoice('rohit', 80, 'personal reason');
-const invTwo = new Invoice('badal', 100, 'personal reason');
-const invoices = [];
-invoices.push(invOne);
-invoices.push(invTwo);
-invoices.forEach(inv => {
-    console.log(inv.format());
-});
 const form = document.querySelector('.new-item-form');
 const type = document.querySelector('#type');
 const toFrom = document.querySelector('#tofrom');
@@ -22,5 +21,12 @@ const details = document.querySelector('#details');
 const amount = document.querySelector('#amount');
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    console.log(type.value, toFrom.value, details.value, amount.valueAsNumber);
+    let doc;
+    if (type.value === 'invoice') {
+        doc = new Invoice(toFrom.value, amount.valueAsNumber, details.value);
+    }
+    else {
+        doc = new Payment(toFrom.value, amount.valueAsNumber, details.value);
+    }
+    console.log(doc);
 });
