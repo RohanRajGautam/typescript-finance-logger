@@ -1,0 +1,23 @@
+{
+  "name": "typescript-finance-logger",
+  "version": "1.0.0",
+  "description": "Simple finance logger created using typescript",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RohanRajGautam/typescript-finance-logger.git"
+  },
+  "keywords": [
+    "Typescript"
+  ],
+  "author": "Rohan Gautam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RohanRajGautam/typescript-finance-logger/issues"
+  },
+  "homepage": "https://rohanrajgautam.github.io/typescript-finance-logger"
+}
